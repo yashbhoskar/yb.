@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -36,3 +36,110 @@
     transform: rotate(360deg);
   }
 }
+
+/* ==========================================TERMINAL CSS START================================================= */
+
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: 1020px;
+  font-size: 22px;
+  overflow: hidden; /* Hide the body scrollbar */
+/* } */
+
+.App-terminal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #2C001E;
+  overflow: hidden; /* Hide the container scrollbar */
+ } 
+
+.terminal {
+  background-color: #2C001E;
+  color: #ecf0f1;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.terminal-header {
+  background-color: #333333;
+  padding: 10px;
+  text-align: center;
+}
+
+.terminal-body {
+  padding: 10px;
+  overflow-y: scroll;
+  height: calc(100% - 40px); /* Adjusted height to account for header and input */
+}
+
+/* ... (rest of the styles) */
+
+
+.terminal-line {
+  /* margin-bottom: 5px; */
+}
+.terminal-line span {
+  color: #2ecc71;
+}
+.terminal-line p {
+  color: #ffffff;
+}
+
+.terminal-line i {
+  color: #ffffff;
+}
+
+.terminal-input {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.terminal-input span {
+  color: #2ecc71;
+  /* margin-right: 5px; */
+}
+
+.terminal-input input {
+  background-color: transparent;
+  border: none;
+  color: #ecf0f1;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 22px;
+  font-weight: 420px;
+  width: 100%;
+  outline: none;
+}
+
+.terminal-input input::placeholder {
+  color: #bdc3c7;
+}
+
+.terminal-command-output {
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
+  margin-left: 5px;
+  line-height: 2;
+  word-spacing: 6px;
+}
+
+.terminal-text {
+  color: #bdc3c7;
+  margin-bottom: 10px;
+  white-space: pre; /* Preserve line breaks in preformatted text */
+}
+
+.ascii-image {
+  display: flex;
+  justify-content: center;
+  white-space: pre; /* Preserve line breaks in preformatted text */
+}
+
+/* ===================================TERMINAL CSS END================================ */
+

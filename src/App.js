@@ -4,6 +4,7 @@ import Preloader from "../src/Components/Pre";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
+import Terminal from "./Components/Terminal/Terminal";
 // import Footer from "./Components/Footer";
 import Resume from "./Components/Resume/ResumeNew";
 import {
@@ -40,6 +41,7 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/terminal" element={<Terminal />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         {/* <Footer /> */}
