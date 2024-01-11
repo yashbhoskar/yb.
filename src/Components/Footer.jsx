@@ -4,6 +4,7 @@ import {
   AiFillGithub,
   AiFillInstagram,
 } from "react-icons/ai";
+import { FaHeart } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
@@ -13,7 +14,7 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Yash Bhoskar</h3>
+          <h3>Developed with <FaHeart style={{color: "red"}} /> by Yash</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} Yb.</h3>

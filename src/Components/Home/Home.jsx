@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
@@ -6,11 +6,14 @@ import Home2 from "./Home2";
 import Type from "./Type";
 import NavBar from "../Navbar";
 import Footer from "../Footer";
+// import Tour from "reactour";
+import About from "../About/About.jsx";
+import Projects from "../Projects/Projects.jsx";
 
 function Home() {
   return (
     <section>
-      <NavBar />
+      {/* <NavBar /> */}
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
@@ -30,6 +33,20 @@ function Home() {
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
+                <p className="mt-5">
+                  Fluent in classics like{" "}
+                  <span className="purple">
+                    Python, Java, Reactjs, Angular, Oracle Sql/PLSQL, MongoDB.
+                  </span>{" "}
+                  <br />
+                  <br />
+                  My field of Interest's are building new Web Technologies and
+                  Products Passionate about <br /> implementing and launching{" "}
+                  <b className="purple">new initiatives. </b>
+                  <br />
+                  <br />I bring a unique combination of <b className="purple"> technical skills </b> and
+                 <b className="purple">creative</b> problem-solving to every project I work on.
+                </p>
               </div>
             </Col>
 
@@ -44,8 +61,10 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
-      <Footer />
+      {/* <Home2 /> */}
+      <About />
+      <Projects />
+      {/* <Footer /> */}
     </section>
   );
 }
