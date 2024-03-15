@@ -89,7 +89,7 @@ function NavBar() {
                   to="/home"
                   onClick={() => updateExpanded(false)}
                 >
-                  <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                  <AiOutlineHome style={{ marginBottom: "1px" }} /> Home
                 </Nav.Link>
               </Nav.Item>
 
@@ -99,7 +99,16 @@ function NavBar() {
                   to="/about"
                   onClick={() => updateExpanded(false)}
                 >
-                  <AiOutlineUser style={{ marginBottom: "2px" }} /> Who am i?
+                  <AiOutlineUser style={{ marginBottom: "1px" }} /> Who am i?
+                </Nav.Link>
+              </Nav.Item>
+
+              <Nav.Item>
+                <Nav.Link
+                  as={Link}
+                  to="/experience"
+                  onClick={() => updateExpanded(false)}>
+                  <AiOutlineUser style={{ marginBottom: "1px" }} /> Experience
                 </Nav.Link>
               </Nav.Item>
 
@@ -110,7 +119,7 @@ function NavBar() {
                   onClick={() => updateExpanded(false)}
                 >
                   <AiOutlineFundProjectionScreen
-                    style={{ marginBottom: "2px" }}
+                    style={{ marginBottom: "1px" }}
                   />{" "}
                   Projects
                 </Nav.Link>
@@ -122,7 +131,7 @@ function NavBar() {
                   to="/resume"
                   onClick={() => updateExpanded(false)}
                 >
-                  <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                  <CgFileDocument style={{ marginBottom: "1px" }} /> Resume
                 </Nav.Link>
               </Nav.Item>
 
@@ -132,7 +141,7 @@ function NavBar() {
                   to="/experience"
                   onClick={() => updateExpanded(false)}
                 >
-                  <CgWorkAlt style={{ marginBottom: "2px" }} /> Experience
+                  <CgWorkAlt style={{ marginBottom: "1px" }} /> Experience
                 </Nav.Link>
               </Nav.Item> */}
 
@@ -143,7 +152,7 @@ function NavBar() {
                   rel="noreferrer"
                   className="terminal"
                 >
-                  <CgTerminal style={{ marginBottom: "2px" }} /> Terminal
+                  <CgTerminal style={{ marginBottom: "1px" }} /> Terminal
                 </Nav.Link>
               </Nav.Item>
 
@@ -153,7 +162,7 @@ function NavBar() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <ImBlog style={{ marginBottom: "1px" }} /> Blogs
               </Nav.Link>
             </Nav.Item> */}
 

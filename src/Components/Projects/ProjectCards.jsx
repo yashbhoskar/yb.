@@ -12,7 +12,8 @@ function ProjectCards(props) {
       <Card.Img className="card-img" variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+        <Card.Title style={{ color: "gray", fontSize: "0.7em"}}> {props.subTitile} </Card.Title>
+        <Card.Text style={{ textAlign: "justify", fontSize: "0.8em" }}>
           {props.description}
         </Card.Text>
         <Card.Footer>

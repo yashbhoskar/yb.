@@ -10,6 +10,8 @@ import {
   DiJava,
   DiMysql,
 } from "react-icons/di";
+import { SiExpress } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
 import {
   SiAngularjs,
 } from "react-icons/si";
@@ -17,17 +19,23 @@ import {
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px", paddingTop: "20px" }}>
-      <Col xs={4} md={2} className="tech-icons" data-tooltip-id="my-tooltip-techstack-1">
-        <DiReact />
-      </Col>
       <Col xs={4} md={2} className="tech-icons" data-tooltip-id="my-tooltip-techstack-2">
         <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons" data-tooltip-id="my-tooltip-techstack-3">
         <SiAngularjs />
       </Col>
+      <Col xs={4} md={2} className="tech-icons" data-tooltip-id="my-tooltip-techstack-8">
+        <SiExpress />
+      </Col>
       <Col xs={4} md={2} className="tech-icons" data-tooltip-id="my-tooltip-techstack-4">
         <DiJavascript1 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" data-tooltip-id="my-tooltip-techstack-9">
+        <TbApi />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons" data-tooltip-id="my-tooltip-techstack-1">
+        <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons" data-tooltip-id="my-tooltip-techstack-5">
         <DiJava />
@@ -52,9 +60,21 @@ function Techstack() {
         variant="primary"
       />
       <ReactTooltip
+        id="my-tooltip-techstack-9"
+        place="top"
+        content="API"
+        variant="primary"
+      />
+      <ReactTooltip
         id="my-tooltip-techstack-3"
         place="top"
         content="AngularJS"
+        variant="primary"
+      />
+      <ReactTooltip
+        id="my-tooltip-techstack-8"
+        place="top"
+        content="Express"
         variant="primary"
       />
       <ReactTooltip

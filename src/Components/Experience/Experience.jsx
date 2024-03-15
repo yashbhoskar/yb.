@@ -13,45 +13,56 @@ import "../../style.css"
 import Footer from "../Footer";
 // import { GoZoomIn } from "react-icons/go";
 // import { GoZoomOut } from "react-icons/go";
+import { GiGraduateCap } from "react-icons/gi";
+import { FaLaptopCode } from "react-icons/fa";
+import { FaSchool } from "react-icons/fa6";
+import { BiSolidSchool } from "react-icons/bi";
+
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 const Experience = () => {
   return (
-    <div>
-      <Container fluid className="resume-section">
-        {/* <NavBar /> */}
-        <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Col sm={2}>
-          {/* <div class="col-lg-6"> */}
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
+
+    <>
+      <div className="container pt-5 mt-5 PB-5">
+        <VerticalTimeline>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            date="Jun 2023 - present"
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+            icon={<FaLaptopCode />}>
+            <h5 className="vertical-timeline-element-title">Software Engineer</h5>
+            <h6 className="vertical-timeline-element-subtitle">Automaton Ai Infosystem</h6>
+            <p className="experience-desc">
               <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                <li>Collaborate with the development team to design, develop, and maintain the application and implement innovative features that enhance the UI/UX experience.</li>
+                <li>Developed secure, modular and robust web applications using Angular, TypeScript, Python Flask Api and React Js.</li>
+                <li>Work closely with the data science and AI/ML teams to seamlessly integrate AI/ML capabilities into the application.</li>
+                  <p>KEY ACHIEVEMENTS</p>
+                  <li>Successfully implemented a secure license authentication system, enhancing the platform’s security.</li>
+                  <li>Development and implementation of a real-time user-wise data analysis and visualization system resulting in a 35% increase in decision-making eﬃciency and a 40% improvement in user performance tracking.</li>
               </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div>
-          {/* </div> */}
-          </Col>
-        </Row>
-        {/* <Footer /> */}
-      </Container>
-    </div>
+            </p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2019 - 2023"
+            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+            icon={<GiGraduateCap />}>
+            <h5 className="vertical-timeline-element-title">College Of Engineering Pune [COEP]</h5>
+            <h6 className="vertical-timeline-element-subtitle">Pune, IND</h6>
+            <p className="experience-desc">CGPA : 7.16</p>
+            {/* <p>
+              Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+            </p> */}
+          </VerticalTimelineElement>
+        </VerticalTimeline>
+      </div>
+    </>
   )
 }
 

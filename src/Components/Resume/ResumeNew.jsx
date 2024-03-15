@@ -3,7 +3,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Yash_Bhoskar_resume.pdf";
+import pdf from "../../Assets//Yash.Bhoskar_Resume_MAR24.pdf";
+// /Yash.Bhoskar_Resume_MAR24.pdf
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
